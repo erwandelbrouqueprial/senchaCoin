@@ -9,14 +9,21 @@ L'objectif de cette partie est de vous familiariser avec ExtJS et Cmd
 
 ## Initialisation
 - Récupérer le projet 
+- Récupérer Sencha Cmd sur à l'adresse https://www.sencha.com/products/sencha-cmd/ et installer le ( il devrait s'installer dans votre espace de travail au path /bin ) 
+PS: Il va vous falloir lancer Cmd de ce path à chaque fois que vous voulez l'éxecuter ( bin/Sencha/Cmd/sencha) 
+- Configurer Cmd avec cette commande : 
+    sencha config --prop sencha.sdk.path={Votre path vers le framework ExtJS, ici le dossier ext que vous venez de récupérer} --save
 - Lancer Sencha Cmd avec la command 'sencha app watch' dans le dossier du projet
 - Vérifier que l'appli tourne sur le port 1841 de votre machine
 
+La documentation est votre plus grand ami. N'hésiter pas à aller la regarder si vous voulez comprendre certaines configs ou certains composants
+http://docs.sencha.com/extjs/6.5.3/modern/Ext.html
+
 ## Modification
-- Créer un fichier Application.js dans le dossier en spécifiant une mainView
-- Faire connaître votre Application dans le fichier app.js de base 
-- Faire le fichier mainView ( définis dans Application.js) qui représentera votre page principal . Elle devra contenir un tabPanel et un simple html (Hello word!) et un boutton
-- Ajouter un controller (Controller.js par exemple) qui a une fonction permettant d'afficher une alert 
+- Créer un fichier Application.js dans le dossier app en spécifiant une mainView
+- Faire connaître votre Application dans le fichier app.js de base ( utiliser extend )
+- Faire le fichier mainView qui représentera une page . Elle devra contenir un tabPanel avec un simple html (Hello word!) et un boutton
+- Ajouter un controller (Controller.js par exemple) qui à une fonction permettant d'afficher une alert 
 - Ajouter le controller dans votre mainView et lier l'action du boutton à la fonction définis dans le controller
 - Ajouter un viewModel dans les config de votre mainview avec comme donné un champ username
 - Modifier le html pour afficher la valeur du champ username
