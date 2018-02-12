@@ -25,23 +25,28 @@ http://docs.sencha.com/extjs/6.5.3/modern/Ext.html
 - Faire le fichier mainView qui représentera une page . Elle devra contenir un tabPanel avec un simple html (Hello word!) et un boutton
 - Ajouter un controller (Controller.js par exemple) qui à une fonction permettant d'afficher une alert 
 - Ajouter le controller dans votre mainView et lier l'action du boutton à la fonction définis dans le controller
-- Ajouter un viewModel dans les config de votre mainview avec comme donné un champ username
-- Modifier le html pour afficher la valeur du champ username
-- Modifier votre fonction du controller pour permettre la modification de la valeur username
+- Ajouter une config  viewModel dans les config de votre mainview avec un champ username
+- Ajouter un textfield qui doit permettre la modification de la valeur username
+- Afficher la valeur du champ username
+
 Avec ça, vous êtes parés pour SenchaCoin
 
 # Partie 2: SenchaCoin - login
+
 - Créer une page de login (un formulaire)
+
+- Lors de la validation du formulaire, afficher (alert ou console log) un message 
+
+Pour aller plus loin 
 - Pour simuler une base de données, créer un fichier JSON qui contiendra des logins d'utilisateurs (vous pourrez vous servir de l'api https://randomuser.me/api/?results=10 pour récupérer des utilisateurs créer aléatoirement) et charger ce fichier au chargement de l'application dans un store
-- Lors de la validation du formulaire, faites la vérification avec les données renseignées dans le store
-- Afficher (alert ou console log) un message pour vous assurer que vous retrouver bien l'utilisateur renseigné
+- Lors de la validation du formulaire, faites la vérification avec les données chargées pour vous assurer que vous retrouver bien l'utilisateur renseigné
 
 # Partie 3: SenchaCoin - main
-- Créer une autre view qui sera votre page principal (un tab panel avec menu et info )
-- Rajouter la redirection vers cette page lorsque le formulaire est validé
+- Créer une autre view qui sera votre page principal (un tab panel est adapté)
+- Rajouter la redirection vers cette page lorsque le formulaire est validé ( Utilisé xtype )
 - Ajouter sur la page principal un graphique (utiliser chart)
-- Ajouter un appel ajax pour récupérer des données sur les cryptomonnaies ( api https://api.coinmarketcap.com/v1/ticker/?convert=EUR&limit=10) périodiquement (toutes les 5 secondes par exemple)
-- Mettez le graphique à jour à chaque appel
+- Ajouter un appel ajax pour récupérer des données sur les cryptomonnaies ( api https://api.coinmarketcap.com/v1/ticker/?convert=EUR&limit=10)
+- Ajouter un bouton de reload et mettez le graphique à jour à chaque clique
 
 
 
